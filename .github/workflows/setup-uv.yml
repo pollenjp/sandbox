@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup UV
-        uses: actions/setup-uv@v4
+        uses: astral-sh/setup-uv@v4
         with:
           version: 0.5
       - name: run uv
