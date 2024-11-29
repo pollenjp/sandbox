@@ -1,0 +1,14 @@
+on:
+  pull_request:
+jobs:
+  setup-uv:
+    name: Setup UV
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup UV
+        uses: actions/setup-uv@v4
+        with:
+          version: 0.5
+      - name: run uv
+        run: |
+          uv --version
